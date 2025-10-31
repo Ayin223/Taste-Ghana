@@ -3,5 +3,11 @@
     "source.fixAll": "explicit",
     "source.organizeImports": "explicit",
     "source.sortMembers": "explicit"
-  }
+  },
+  "launch": {
+
+    "configurations": [],
+    "compounds": []
+  },
+  "json.schemas": []
 }
