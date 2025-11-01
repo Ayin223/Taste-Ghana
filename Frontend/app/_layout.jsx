@@ -1,31 +1,21 @@
-import { Ionicons } from "@expo/vector-icons";
-import { Tabs } from "expo-router";
+import { Stack } from "expo-router";
 
 export default function RootLayout() {
   return (
-    <Tabs>
-      <Tabs.Screen
-        name = "home"
-        options ={{
-          //headerShown: false,
-          title: "Recipes",
-          tabBarIcon: (({color, size}) => <Ionicons name ="restaurant" size = {size} color ={color}/>)
-        }}
+    <Stack>
+      <Stack.Screen
+        name = "(tabs)"
+        options={{headerShown: false}}
       />
-      <Tabs.Screen
-        name = "favorite"
-        options ={{
-          title: "favorite",
-          tabBarIcon: (({color, size}) => <Ionicons name ="heart" size = {size} color ={color}/>)
-        }}
+
+      <Stack.Screen
+        name = "(auth)"
+        options={{headerShown: false}}
       />
-      <Tabs.Screen
-        name = "profile"
-        options ={{
-          title: "Profile",
-          tabBarIcon: (({color, size}) => <Ionicons name ="person" size = {size} color ={color}/>)
-        }}
+      <Stack.Screen
+        name = "(details)"
+        options={{headerShown: false}}
       />
-    </Tabs>
+    </Stack>
 );
 }

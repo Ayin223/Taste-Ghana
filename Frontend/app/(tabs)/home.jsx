@@ -2,7 +2,7 @@ import { Image } from 'expo-image'
 import { useRouter } from 'expo-router'
 import { ScrollView, StyleSheet, Text, TextInput, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import meal from "../assets/data/meals.json"
+import meal from "../../assets/data/meals.json"
 
 const HomeScreen = () => {
   const router = useRouter()
